@@ -11,7 +11,7 @@ from .message_handlers import bot
 
 Telegram-Bot "C3PO - Helper"
 Version: 2.0.0
-Project GitHub: ...
+Project GitHub: https://github.com/Devilord-coder/Bot-Helper
 Our GitHub: https://github.com/Devilord-coder
 Our Telegram-Channel: https://t.me/Regis_Incorporated
 For communication: https://t.me/Devilord_666
