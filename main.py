@@ -1,4 +1,5 @@
-from .message_handlers import bot
+import handlers
+from bot import bot
 
 """
 ██████╗ ███████╗ ██████╗ ██╗███████╗
@@ -11,7 +12,7 @@ from .message_handlers import bot
 
 Telegram-Bot "C3PO - Helper"
 Version: 2.0.0
-Project GitHub: https://github.com/Devilord-coder/Bot-Helper
+Project GitHub: https://github.com/Devilord-coder/Bot-Helper.git
 Our GitHub: https://github.com/Devilord-coder
 For communication: https://t.me/Devilord_666
 """
@@ -20,7 +21,8 @@ For communication: https://t.me/Devilord_666
 def main():
     """ Main function that activates C3PO """
     
-    bot.infinity_polling()
+    bot.infinity_polling(allowed_updates=['message', 'callback_query', 'edited_message', 'channel_post',
+                                          'chat_member', 'my_chat_member'])
 
 
 if __name__ == "__main__":
