@@ -1,8 +1,8 @@
-import commands
-import groups
-import private
-import channel_posts
-import all_chats
+from .commands import *
+from .groups import *
+from .private import *
+from .channel_posts import *
+from .all_chats import *
 
 """Обработчки сообщений"""
 

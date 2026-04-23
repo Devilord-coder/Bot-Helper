@@ -1,6 +1,7 @@
 from ..bot import bot
 from ..const import COMMANDS
 from ..registration import registrate_user
+from backend.keyboards.inline_keyboards import social_networks_keyboard
 
 
 @bot.message_handler(commands=["start"])
@@ -11,7 +12,8 @@ def start_answer(msg):
         msg.chat.id,
         f"""Привет! Я личный бот помошник @Devilord_666 👹
 Вот мои команды:
-{'\n\t'.join([f"{k} - {v}" for k, v in COMMANDS.items()])}"""
+{'\n\t'.join([f"{k} - {v}" for k, v in COMMANDS.items()])}""",
+        reply_markup=social_networks_keyboard()
         )
 
 
