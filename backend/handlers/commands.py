@@ -12,7 +12,7 @@ def start_answer(msg):
         msg.chat.id,
         f"""Привет! Я бот C3PO
 Вот мои команды:
-{'\n\t'.join([f"{k} - {v}" for k, v in COMMANDS.items()])}""",
+{'\n - '.join([f"{k} - {v}" for k, v in COMMANDS.items()])}""",
         reply_markup=social_networks_keyboard()
         )
 
