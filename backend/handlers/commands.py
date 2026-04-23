@@ -10,7 +10,7 @@ def start_answer(msg):
 
     bot.send_message(
         msg.chat.id,
-        f"""Привет! Я личный бот помошник @Devilord_666 👹
+        f"""Привет! Я бот C3PO
 Вот мои команды:
 {'\n\t'.join([f"{k} - {v}" for k, v in COMMANDS.items()])}""",
         reply_markup=social_networks_keyboard()

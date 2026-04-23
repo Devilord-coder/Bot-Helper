@@ -12,7 +12,7 @@ def social_networks_keyboard() -> InlineKeyboardMarkup:
         url="https://github.com/Devilord-coder"
     )
     dysnet_btn = InlineKeyboardButton(
-        text="Наш сайт для азвития навыков",
+        text="Наш сайт для развития навыков",
         url="http://danya.42post.ru:18080"
     )
     vk_btn = InlineKeyboardButton(
@@ -20,7 +20,7 @@ def social_networks_keyboard() -> InlineKeyboardMarkup:
         url="https://vk.com/devilord"
     )
     telegramm_btn = InlineKeyboardButton(
-        text="Связь с админом",
+        text="Связь с админом👹",
         url="https://t.me/Devilord_666"
     )
     markup.add(
