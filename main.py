@@ -1,5 +1,6 @@
-import handlers
-from bot import bot
+import backend.handlers
+from backend import bot, global_init
+from backend.const import DATABASE_PATH
 
 """
 ██████╗ ███████╗ ██████╗ ██╗███████╗
@@ -21,6 +22,8 @@ For communication: https://t.me/Devilord_666
 def main():
     """ Main function that activates C3PO """
     
+    print(f"Bot started working . . .")
+    global_init(DATABASE_PATH)
     bot.infinity_polling(allowed_updates=['message', 'callback_query', 'edited_message', 'channel_post',
                                           'chat_member', 'my_chat_member'])
 
