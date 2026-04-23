@@ -4,6 +4,8 @@ from .db_session import create_session
 
 
 def registrate_user(msg):
+    """Регистрация пользователя"""
+
     db = create_session()
     new_user = User(
         id=msg.from_user.id,
