@@ -24,4 +24,4 @@ def registrate_user(msg):
     db.commit()
     db.close()
     bot.send_message(msg.chat.id, "Отлично! Вы успешно зарегистрированы 😎")
-    print(f"New user registred - {new_user.name}({new_user.username}) at {new_user.created_date}")
+    # print(f"New user registred - {new_user.name}({new_user.username}) at {new_user.created_date}")
