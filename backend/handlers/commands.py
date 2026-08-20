@@ -1,5 +1,5 @@
 from ..bot import bot
-from ..const import COMMANDS
+from ..config import config
 from ..registration import registrate_user
 from backend.keyboards.inline_keyboards import social_networks_keyboard
 
@@ -12,7 +12,7 @@ def start_answer(msg):
         msg.chat.id,
         f"""Привет! Я бот C3PO
 Вот мои команды:
- - {'\n - '.join([f"{k} - {v}" for k, v in COMMANDS.items()])}""",
+ - {'\n - '.join([f"{k} - {v}" for k, v in config.COMMANDS.items()])}""",
         reply_markup=social_networks_keyboard()
         )
 

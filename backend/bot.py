@@ -1,7 +1,4 @@
 from telebot import TeleBot
-import os
-from dotenv import load_dotenv
+from .config import config
 
-load_dotenv()
-
-bot = TeleBot(os.getenv("TELEBOT_TOKEN"))
+bot = TeleBot(config.TELEBOT_TOKEN)
